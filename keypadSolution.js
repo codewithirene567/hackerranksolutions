@@ -1,6 +1,12 @@
-
+//About this solution:
+//We are trying to write an algorithm that will take an array of english words
+//and trying to recreate these words with an array of random letter combinations.
+// The ended output will be an array of how many words for each combination can come from each
+//of these combinations.
 function numKeypadSolutions(wordlist, keypads) {
         // Write your code here
+    //creating an object to store each of the combinations also called keypads, and their made
+    //word occurances
         let output = {}
         for (let i = 0; i<keypads.length; i++){
         output[keypads[i]] = 0
