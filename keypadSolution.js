@@ -22,6 +22,17 @@ function numKeypadSolutions(wordlist, keypads) {
                     } 
                 }
             }
-          
+          if (flag == true && word.includes(keypad[0])){
+                  //console.log("contains")
+                  output[keypad] = output[keypad] + 1 
+              }
+              flag = true
+            }
+          }   
+         
+           for (let key in output){
+            array.push(output[key])
+          }
+          return array
     }
     
